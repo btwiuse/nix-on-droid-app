@@ -39,8 +39,8 @@ android {
 
     // NIX-ON-DROID: Downstream version.
     defaultConfig {
-        applicationId "com.termux"
-        applicationIdSuffix ".nix"
+        applicationId "app.pocketdot"
+        applicationIdSuffix ""
         versionCode 188034
         versionName "0.118.0_v0.3.4_nix"
         // fdroid checkupdates looks for literal versionCode/versionName,
@@ -57,7 +57,7 @@ android {
 
         buildConfigField "String", "TERMUX_PACKAGE_VARIANT", "\"" + project.ext.packageVariant + "\"" // Used by TermuxApplication class
 
-        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.termux.nix"
+        manifestPlaceholders.TERMUX_PACKAGE_NAME = "app.pocketdot"
         manifestPlaceholders.TERMUX_APP_NAME = "Nix"
         manifestPlaceholders.TERMUX_API_APP_NAME = "Termux:API"
         manifestPlaceholders.TERMUX_BOOT_APP_NAME = "Termux:Boot"
